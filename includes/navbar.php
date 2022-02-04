@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar shadow navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#"><strong>PHP OOPS</strong></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link  <?php if(basename($_SERVER['PHP_SELF']) == 'index.php') {echo "active" ;} else "" ?>" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="register.php">Register</a>
+          <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'register.php') {echo "active" ;} else "" ?>" href="register.php">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.php">Login</a>
+          <a class="nav-link <?php if(basename($_SERVER['PHP_SELF']) == 'login.php') {echo "active" ;} else "" ?>" href="login.php">Login</a>
         </li>
       </ul>
     </div>
