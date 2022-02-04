@@ -13,4 +13,4 @@
           color: white;
       }
   </style> -->
-  <body class="bg-dark">
+  <body class="">
