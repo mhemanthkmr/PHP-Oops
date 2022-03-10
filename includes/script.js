@@ -3,7 +3,7 @@ const togglePassword = document
 
 const password = document.querySelector('#floatingPassword');
 
-togglePassword.addEventListener('click', () => {
+togglePassword.addEventListener('#button-addon1', () => {
 
     // Toggle the type attribute using
     // getAttribure() method

@@ -19,8 +19,7 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                <label for="floatingPassword">Password</label>
-                                <i class="fa-solid fa-eye password" id="togglePassword"></i>
+                                <label for="floatingInput">Password</label>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary" >Sign-in</button>
