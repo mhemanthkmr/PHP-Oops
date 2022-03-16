@@ -14,7 +14,7 @@ if(isset($_POST['register_btn']))
     $result_password = $register->confirmPassword($password, $cpassword);
     if($result_password)
     {
-
+        
     }
     else
     {
