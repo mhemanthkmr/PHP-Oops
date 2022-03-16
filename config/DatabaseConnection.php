@@ -5,7 +5,7 @@ class DatabaseConnection
     {
         $conn = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
         // die(print_r($conn));
-        if(!$conn)
+        if($conn->connect_error)
         {
             die("<h1>Database Connection Failed</h1>");
         }
