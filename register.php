@@ -2,6 +2,7 @@
 $title = "Register";
 include('includes/header.php');
 include('includes/navbar.php');
+include('codes/authentication.php')
 ?>
 
 <div class="py-4">
@@ -14,7 +15,7 @@ include('includes/navbar.php');
                     </div>
                     <div class="card-body">
                         <form action="" method="post">
-                        <div class="form-floating mb-3">
+                            <div class="form-floating mb-3">
                                 <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Name</label>
                             </div>
@@ -35,9 +36,8 @@ include('includes/navbar.php');
                                 <label for="floatingPassword">Confirm Password</label>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary" >Sign-in</button>
+                                <button type="submit" name="register_btn" class="btn btn-primary" >Submit</button>
                             </div>
-                            
                         </form>
                     </div>
                 </div>
