@@ -9,12 +9,13 @@ include('codes/authentication.php')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
+                <?php include('message.php'); ?>
                 <div class="card shadow">
                     <div class="card-header">
                         <h4 class="text-center">Register</h4>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="codes/authentication.php" method="post">
                             <div class="form-floating mb-3">
                                 <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Name</label>
