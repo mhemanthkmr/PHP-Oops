@@ -17,23 +17,23 @@ include('codes/authentication.php')
                     <div class="card-body">
                         <form action="codes/authentication.php" method="post">
                             <div class="form-floating mb-3">
-                                <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <input type="text" name="Name" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Name</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Username</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                                 <label for="floatingInput">Email address</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Password</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="cpassword" class="form-control" id="floatingPassword" placeholder="Password">
+                                <input type="password" name="cpassword" class="form-control" id="floatingPassword" placeholder="Password">
                                 <label for="floatingPassword">Confirm Password</label>
                             </div>
                             <div class="text-center">
