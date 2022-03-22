@@ -7,7 +7,7 @@ define('SITE_URL', 'http://localhost/PHP-Oops/');
 include_once('controllers/SessionController.php');
 include_once('DatabaseConnection.php');
 $db = new DatabaseConnection;
-
+// $conn = $db->conn;
 function baseurl($slug)
 {
     echo SITE_URL.$slug;
