@@ -13,3 +13,6 @@
     <title><?php if (isset($title)) {echo $title ;}?></title>
 </head>
 <body class="">
+<?php 
+    include_once('../controllers/SessionController.php');
+?>

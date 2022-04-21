@@ -1,6 +1,8 @@
 <?php
 include('../config/app.php');
 include('../controllers/RegisterController.php');
+// include('../controllers/SessionController.php');
+SessionController::start();
 if(isset($_POST['register_btn']))
 {
     $name = validateInput($db->conn,$_POST['name']);
@@ -9,18 +11,26 @@ if(isset($_POST['register_btn']))
     $password = validateInput($db->conn,$_POST['password']);
     $cpassword = validateInput($db->conn,$_POST['cpassword']);
     // print_r($_POST);
-    echo $password.$cpassword;
+    // echo $password.$cpassword;
     $register = new RegisterController;
 
     $result_password = $register->confirmPassword($password, $cpassword);
     if($result_password)
     {
-        echo "Password Match";
+        $result_user = $register->isUserExist($email);
+        if($result_user)
+        {
+            echo "User EXist ".$email;
+        }
+        else
+        {
+            echo "User NOt EXist ".$email;
+        }
     }
     else
     {
-        // redirect('status','Password and Confirm Password does not Match','index.php');
-        echo "Password Not Match";
+        redirect('message','Password and Confirm Password does not Match','register.php',1);
+        // echo "Password Not Match";
     }
 }
 ?>
